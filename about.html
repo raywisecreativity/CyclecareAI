@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About PCOS & AI Models</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS -->
+</head>
+<body>
+
+ <!-- Header Section -->
+<header class="header">
+    <div class="logo">
+        <img src="./images/logo.jpg" width="70rem" alt="PCOS Health AI Logo">
+    </div>
+    <h1>CycleCare AI</h1>
+    <button class="return-button" onclick="location.href='index.html'">Home</button>
+</header>
+
+    <!-- PCOS Section -->
+    <section id="about-pcos">
+        <h2>What is PCOS?</h2>
+        <p>
+            Polycystic Ovary Syndrome (PCOS) is a common hormonal disorder that affects women of reproductive age. 
+            It can cause irregular periods, excessive hair growth, acne, and infertility. PCOS is also associated 
+            with insulin resistance, increasing the risk of type 2 diabetes and heart disease.
+        </p>
+        <p>
+            While there is no cure for PCOS, lifestyle changes, medications, and proper medical guidance can help 
+            manage its symptoms and improve overall well-being.
+        </p>
+    </section>
+
+    <!-- AI Models Section -->
+    <section id="ai-models">
+        <h2>Our AI Models for PCOS Management</h2>
+        <p>
+            We use cutting-edge AI models to assist in PCOS diagnosis, risk assessment, and lifestyle recommendations. 
+            Our goal is to provide personalized and data-driven insights to improve women's health.
+        </p>
+
+        <!-- Risk Detection Model -->
+        <div class="model-card">
+            <h3>🛑 Risk Detection Model</h3>
+            <p><strong>Model Type:</strong> Predictive Classification</p>
+            <p>
+                This AI model analyzes patient data to predict the likelihood of developing PCOS. It considers 
+                factors like medical history, symptoms, and hormone levels to assess risk levels.
+            </p>
+        </div>
+
+        <!-- Medical Imaging Model -->
+        <div class="model-card">
+            <h3>📸 Medical Imaging Model</h3>
+            <p><strong>Model Type:</strong> Image Analysis</p>
+            <p>
+                Our medical imaging AI processes ultrasound images to detect ovarian cysts and abnormalities. 
+                This helps doctors in diagnosing PCOS more accurately and efficiently.
+            </p>
+        </div>
+
+        <!-- Lifestyle Recommendation Model -->
+        <div class="model-card">
+            <h3>🍏 Lifestyle Recommendation System</h3>
+            <p><strong>Model Type:</strong> Generative AI</p>
+            <p>
+                Based on a user's health profile and symptoms, this AI model provides personalized diet, 
+                exercise, and lifestyle recommendations to manage PCOS effectively.
+            </p>
+        </div>
+    </section>
+
+    <!-- Chatbot Floating Button -->
+    <div class="chatbot-icon" id="chatbot-button">
+        <i class="fas fa-comment-dots"></i>
+    </div>
+
+    <!-- Chatbot Container -->
+    <div class="chatbot-container" id="chatbot-container" style="display: none;">
+        <div class="chatbot-header">
+            <h4>PCOS Adviser Bot</h4>
+            <button id="close-chatbot">&times;</button>
+        </div>
+        <div class="chatbot-messages" id="chatbot-messages">
+            <p>👋 Hi! How can I assist you with PCOS today?</p>
+        </div>
+        <input type="text" id="chatbot-input" placeholder="Type your question...">
+        <button id="voice-button">🎤</button> <!-- 🎤 Voice input button -->
+    </div>
+
+    <!-- Footer -->
+<footer>
+    <p>&copy; 2025 PCOS Health AI. All rights reserved.</p>
+    <div class="designer-credit">
+        <p>Designed by <a href="https://raywisecreativity.netlify.app" target="_blank">Raywise Creativity</a></p>
+    </div>
+</footer>
+
+
+    <!-- Include Chatbot JavaScript -->
+    <script src="chatbot.js"></script>
+
+</body>
+</html>
