@@ -6,6 +6,7 @@
     <title>CycleCare AI</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="images/logo.jpg" type="image/gif" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.4/lottie.min.js"></script>
    
 </head>
@@ -18,12 +19,12 @@
 <!-- Collapsible Navigation Menu -->
 <nav class="menu-bar" id="menuBar">
     <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#symptom-tracker">Symptom Tracker</a></li>
-        <li><a href="#educational-resources">Educational Resources</a></li>
-        <li><a href="#ai-chat">AI Chat Assistant</a></li>
-        <li><a href="#community-forum">Community Forum</a></li>
-        <li><a href="#doctor-finder">Doctor Finder</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="https://cyclecare-pcos-symptom-tracker.streamlit.app/">Symtoms tracker</a></li>
+        <!-- <li><a href="#educational-resources">Educational Resources</a></li> -->
+        <li><a href="https://pcos-chatbotgit-yh7uunf7qi77auzs4kn7jw.streamlit.app/">Companion Support</a></li>
+        <!-- <li><a href="#community-forum">Community Forum</a></li> -->
+        <li><a href="https://circlecare-ai.streamlit.app/">Lifestyle Recommendation</a></li>
     </ul>
 </nav>
 
@@ -54,38 +55,55 @@
     <div class="marquee">
         <p>Know it |  Fight it| Manage </p>
     </div>
-
-    <!-- AI Models Section -->
-    <section id="models">
-        <h2>Our AI Models</h2>
-        <div class="models-container">
-            <div class="model-card" onclick="openModel('https://risk-detection-model.com')">
-                <img src="./images/detection-of-polycystic-ovary-syndrome-65d880d51f02a (1).webp" alt="Risk Detection Model">
-                <h3>Risk Detection Model</h3>
-                <p><strong>Model Type:</strong> Predictive Classification</p>
-            </div>
-            <div class="model-card" onclick="openModel('https://medical-imaging-model.com')">
-                <img src="./images/images.jpg" alt="Medical Imaging Model">
-                <h3>Medical Imaging Model</h3>
-                <p><strong>Model Type:</strong> Image Analysis</p>
-            </div>
-            <div class="model-card" onclick="openModel('https://lifestyle-recommendation-model.com')">
-                <img src="./images/6185-pcos-diet_1006x755.avif" alt="Lifestyle Recommendation">
-                <h3>Lifestyle Recommendation System</h3>
-                <p><strong>Model Type:</strong> Generative AI</p>
-            </div>
+<!-- AI Models Section -->
+<section id="models">
+    <h2>Our AI Models</h2>
+    <div class="models-container">
+        <div class="model-card" onclick="animateCard(this, 'https://cyclecare-pcos-symptom-tracker.streamlit.app/')">
+            <span class="card-label">Risk Detection Model</span>
+            <img src="./images/detection-of-polycystic-ovary-syndrome-65d880d51f02a (1).webp" alt="Risk Detection Model">
+            <h3>Risk Detection Model</h3>
+            <p><strong>Model Type:</strong> Predictive Classification</p>
         </div>
-    </section>
+        <div class="model-card" onclick="animateCard(this, 'https://pcos-cnn-medical-imaging.streamlit.app')">
+            <span class="card-label">Medical Imaging Model</span>
+            <img src="./images/images.jpg" alt="Medical Imaging Model">
+            <h3>Medical Imaging Model</h3>
+            <p><strong>Model Type:</strong> Image Analysis</p>
+        </div>
+        <div class="model-card" onclick="animateCard(this, 'https://circlecare-ai.streamlit.app/')">
+            <span class="card-label">Lifestyle Recommendation System</span>
+            <img src="./images/6185-pcos-diet_1006x755.avif" alt="Lifestyle Recommendation">
+            <h3>Lifestyle Recommendation System</h3>
+            <p><strong>Model Type:</strong> Generative AI</p>
+        </div>
+    </div>
+</section>
+
+<!-- YouTube Video Section -->
+<section id="video-section">
+    <iframe 
+        id="youtube-video"
+        width="100%" 
+        height="500px" 
+        src="https://www.youtube.com/embed/DgYIt5bhGcA?autoplay=1&mute=0" 
+        frameborder="0" 
+        allow="autoplay; encrypted-media" 
+        allowfullscreen>
+    </iframe>
+</section>
+
 
    <!-- Meet The Team Section -->
 <section id="team">
-    <h2>Meet Mind Gen AI Team</h2>
+    <a href="./index.html">Meet MindGEN AI Team</a>
+
     <div class="team-container">
         <div class="team-member">
-            <img src="./images/my_pics_2-edited.png" alt="Mind GEN AI">
+            <img src="./images/replicate-prediction-s3hkvrck4xrmc0cng98bdq92bw.png" alt="Mind GEN AI">
             <p>Odukoya Samuel</p>
             <p>Team Lead</p>
-            <p>Frontend Developer / Data Scientist</p>
+            <p>Frontend Developer / AI Engineer/ Data Scientist</p>
         </div>
         <div class="team-member">
             <img src="./images/oshodi.jpg" alt="Mind GEN AI">
@@ -95,58 +113,62 @@
         </div>
         <div class="team-member">
             <img src="./images/hamzat.jpg" alt="Mind GEN AI">
-            <p>Hamzat</p>
+            <p> Hamzat Akolade</p>
             <p>Team Member</p>
-            <p>Data Scientist</p>
+            <p> Data Analyst | Data Scientist | ML/AI Engineer</p>
         </div>
         <div class="team-member">
             <img src="./images/memunut.jpg" alt="Mind GEN AI">
-            <p>Memunut</p>
+            <p>Balogun Memunat</p>
             <p>Team Member</p>
             <p>Data Scientist</p>
         </div>
         <div class="team-member">
             <img src="./images/adewale.jpg" alt="Mind GEN AI">
-            <p>Adewale</p>
+            <p>Adewale Abidemi</p>
             <p>Team Member</p>
             <p>Data Scientist</p>
         </div>
         <div class="team-member">
-            <img src="./images/tooebat.jpg" alt="Mind GEN AI">
+            <img src="./images/beebah.jpg" alt="Mind GEN AI">
             <p>Tiletile Toheebat</p>
             <p>Project Documentation Officer</p>
             <p>Data Scientist</p>
         </div>
         <div class="team-member">
             <img src="./images/beebah.jpg" alt="Mind GEN AI">
-            <p>Jinadu Habibat</p>
+            <p>Habibat Jinadu</p>
             <p>Team Member</p>
             <p>Data Scientist</p>
         </div>
     </div>
 </section>
 
+<!-- Chatbot Floating Button -->
+<div class="chatbot-icon" id="chatbot-button">
+    <i class="fas fa-comment-dots"></i>
+</div>
 
-    <!-- Chatbot Floating Button -->
-    <div class="chatbot-icon" id="chatbot-button">
-        <i class="fas fa-comment-dots"></i>
+<!-- Chatbot Container -->
+<div class="chatbot-container" id="chatbot-container" style="display: none;">
+    <div class="chatbot-header">
+        <h4>PCOS Adviser Bot</h4>
+        <button id="close-chatbot">&times;</button>
     </div>
+    <div class="chatbot-messages" id="chatbot-messages">
+        <p>👋 Hi! How can I help you with PCOS today?</p>
+    </div>
+    <input type="text" id="chatbot-input" placeholder="Type your question...">
+    <button id="voice-button">🎤</button> <!-- 🎤 Voice input button -->
+</div>
 
-    <!-- Chatbot Container -->
-    <div class="chatbot-container" id="chatbot-container">
-        <div class="chatbot-header">
-            <h4>PCOS Adviser Bot</h4>
-            <button id="close-chatbot">&times;</button>
-        </div>
-        <div class="chatbot-messages" id="chatbot-messages">
-            <p>👋 Hi! How can I help you with PCOS today?</p>
-        </div>
-        <input type="text" id="chatbot-input" placeholder="Type your question...">
-    </div>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 AI PCOS Lifestyle Adviser | All Rights Reserved</p>
+        <p>&copy; 2025 PCOS Health AI. All rights reserved.</p>
+        <div class="designer-credit">
+            <p>Designed by <a href="https://raywisecreativity.netlify.app" target="_blank">Raywise Creativity</a></p>
+        </div>
     </footer>
 <!-- Other Sections Remain the Same -->
 
