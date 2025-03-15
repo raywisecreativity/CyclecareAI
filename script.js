@@ -148,7 +148,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
-                    "Authorization": " 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" // Replace with actual API key
+                    "Authorization": "ygioufgyy8ivbgg789v g6789gnbyvt687fgn g7ovg67u7b 789mnyhn980gnbf 8" // Replace with actual API key
                 },
                 body: JSON.stringify({
                     model: "gpt-3.5-turbo",
