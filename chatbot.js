@@ -8,7 +8,7 @@ document.getElementById('chatbot-input').addEventListener('keypress', function(e
         chatMessages.appendChild(userMsgElement);
         
         let botMsgElement = document.createElement('p');
-        botMsgElement.textContent = "🤖: Thank you for your question! I'm still learning. 😊";
+        botMsgElement.textContent = "🤖: Thank you for your question! I'm still learning although Raywise creativity is on it . 😊";
         chatMessages.appendChild(botMsgElement);
 
         this.value = '';
